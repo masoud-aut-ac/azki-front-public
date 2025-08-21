@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'IranSans';
+    src: url('../common/fonts/iran-sans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.register-page {
+    direction: rtl;
+    background: linear-gradient(135deg, #ffffff, #b3d0ec);
+    font-family: 'IranSans', serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-box {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 30px;
+    border: 1px solid #ddd;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    height: 100%;
+}
+
+.form-title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2px;
+    margin-bottom: 10px;
+}
+
+.form-title img {
+    width: 35px;
+    height: 35px;
+}
+
+.form-title h4 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.description {
+    color: #6c757d;
+    font-size: 16px;
+    margin-bottom: 25px;
+    text-align: right;
+}
+
+.form-control {
+    border-radius: 10px;
+}
+
+.btn-primary {
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 6px 12px;
+    height: 36px;
+    width: 50%;
+}
+
+.login-link {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.logo-box {
+    margin-bottom: 10px;
+}
+
+.btn-primary{
+    background-color: #52b5fb;
+    border: none;
+}
+.btn-primary:hover{
+    background-color: #277aaf;
+}
+
+.errorDiv {
+    margin-top: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #b32f21;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    display: none;
+    max-width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*result-page*/
+
+.success-page{
+    background-color: white !important;
+    font-family: 'IranSans', serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.success-box{
+    background-color: #e2ffec;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+.logo-box img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-buttom: 10px;
+}
+
+.home-btn{
+    background-color: #2ca3fa;
+    color: white;
+    border-radius: 7px;
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+    white-space: nowrap;
+    font-weight: 400;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-left: 5px;
+    cursor: pointer;
+    align-items: center;
+    margin-right: 30%;
+    margin-top: 20px;
+}
