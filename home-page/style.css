@@ -131,17 +131,15 @@ body {
         top: 30%;
         left: 0;
         transform: translateY(-70%);
-        margin:  20px;
+        margin: 20px;
         order: 1;
-
-
     }
 
-    .navbar-brand img{
-        height: 40px!important;
-        width: 40px!important;
-
+    .navbar-brand img {
+        height: 40px !important;
+        width: 40px !important;
     }
+
     .navbar-toggler {
         order: 1;
         position: absolute;
@@ -162,8 +160,6 @@ body {
         display: block;
         padding: 10px 0;
     }
-
-
 }
 
 /*banner*/
@@ -183,7 +179,7 @@ body {
     text-align: center;
     font-size: 26px;
     font-weight: bolder;
-    line-height:2;
+    line-height: 2;
 }
 
 #first-row button {
@@ -225,15 +221,15 @@ body {
 @media (max-width: 1366px) {
     .banner-bg {
         margin-top: 40px;
-        background-size: auto 220px!important;
-        min-height: 150px!important;
+        background-size: auto 220px !important;
+        min-height: 150px !important;
     }
 
     #first-row {
         padding-top: 35px;
         padding-bottom: 35px;
         font-size: 14px;
-        line-height: 1.2!important;
+        line-height: 1.2 !important;
     }
 
     #first-row button {
@@ -256,6 +252,7 @@ body {
     }
 }
 
+/*card1*/
 .values-section {
     direction: rtl;
     text-align: right;
@@ -286,7 +283,6 @@ body {
     text-align: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     transition: background 0.5s ease, box-shadow 0.5s ease;
-    cursor: pointer;
     max-height: 450px;
     max-width: 900px;
     width: 100%;
@@ -337,10 +333,9 @@ body {
         padding: 30px 20px;
         min-height: 200px;
     }
-
 }
 
-/*card2*/
+/*statistic*/
 .section-2 p {
     text-align: center;
     font-size: 24px;
@@ -370,7 +365,7 @@ body {
     height: 200px;
     background-color: #f1f1f1;
     border-radius: 50%;
-    border: 10px solid #007bff;
+    border: 10px solid #379ff3;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -426,6 +421,8 @@ body {
     }
 }
 
+/*first carousel*/
+
 .carousel {
     border-radius: 20px;
     overflow: hidden;
@@ -454,6 +451,7 @@ body {
     }
 }
 
+/*card2*/
 
 .card {
     position: relative;
@@ -542,10 +540,9 @@ body {
     border-radius: 20px;
     overflow: hidden;
     margin: 30px auto;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     max-width: 75%;
     background-color: #f8f9fa;
-
 }
 
 #sellerCarousel h4 {
@@ -581,6 +578,7 @@ body {
     #sellerCarousel .image-wrapper {
         min-height: 320px;
     }
+
     #sellerCarousel .image-wrapper img {
         height: 100%;
         object-fit: cover;
@@ -610,7 +608,6 @@ body {
 /*faq*/
 .accordion-body {
     background-color: #e7f1ff;
-    padding: 20px !important;
     font-size: 15px;
     color: #333;
     line-height: 1.6;
@@ -679,6 +676,12 @@ body {
 .accordion-collapse {
     border-radius: 12px;
     overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    .accordion {
+        margin: 0 8%;
+    }
 }
 
 /*footer*/
