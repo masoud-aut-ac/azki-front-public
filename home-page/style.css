@@ -114,54 +114,6 @@ body {
 }
 
 
-@media (max-width: 1024px) {
-    .custom-navbar {
-        max-width: 100%;
-        width: 100%;
-        height: 7%;
-        margin: 0;
-        border-radius: 0;
-        padding: 10px 16px;
-        justify-content: space-between;
-        z-index: 1320;
-    }
-
-    .navbar-brand {
-        position: absolute;
-        top: 30%;
-        left: 0;
-        transform: translateY(-70%);
-        margin: 20px;
-        order: 1;
-    }
-
-    .navbar-brand img {
-        height: 40px !important;
-        width: 40px !important;
-    }
-
-    .navbar-toggler {
-        order: 1;
-        position: absolute;
-        right: 16px;
-
-    }
-
-    .navbar-collapse {
-        order: 3;
-        width: 100%;
-        text-align: center;
-        background-color: rgba(255, 255, 255, 0.95);
-        margin-top: 10px;
-        border-radius: 8px;
-    }
-
-    .navbar-nav .nav-link {
-        display: block;
-        padding: 10px 0;
-    }
-}
-
 /*banner*/
 
 .banner-bg {
@@ -218,39 +170,6 @@ body {
     background-color: #5dbdff;
 }
 
-@media (max-width: 1366px) {
-    .banner-bg {
-        margin-top: 40px;
-        background-size: auto 220px !important;
-        min-height: 150px !important;
-    }
-
-    #first-row {
-        padding-top: 35px;
-        padding-bottom: 35px;
-        font-size: 14px;
-        line-height: 1.2 !important;
-    }
-
-    #first-row button {
-        font-size: 12px;
-    }
-
-    .log-in-btn {
-        font-size: 8px !important;
-        padding: 7px 17px !important;
-        font-weight: 600;
-        background-color: #66BFFF;
-        color: white;
-        border: none;
-        border-radius: 12px;
-        text-align: center;
-        display: inline-block;
-        cursor: pointer;
-        text-decoration: none;
-
-    }
-}
 
 /*card1*/
 .values-section {
@@ -323,18 +242,6 @@ body {
 }
 
 
-@media (max-width: 768px) {
-    .values-list {
-        grid-template-columns: 1fr;
-        align-items: stretch;
-    }
-
-    .value-item {
-        padding: 30px 20px;
-        min-height: 200px;
-    }
-}
-
 /*statistic*/
 .section-2 p {
     text-align: center;
@@ -365,7 +272,7 @@ body {
     height: 200px;
     background-color: #f1f1f1;
     border-radius: 50%;
-    border: 10px solid #379ff3;
+    border: 15px double #379ff3;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -394,33 +301,6 @@ body {
 }
 
 
-@media (max-width: 768px) {
-    .statistic-icon {
-        width: 140px;
-        height: 140px;
-    }
-
-    .statistic-icon .value {
-        font-size: 20px;
-    }
-
-    .statistic-icon img {
-        width: 40%;
-        height: 40%;
-        object-fit: contain;
-        margin-bottom: 10px;
-    }
-
-
-    .statistic .label {
-        font-size: 16px;
-    }
-
-    .statistic-container {
-        gap: 1.5rem;
-    }
-}
-
 /*first carousel*/
 
 .carousel {
@@ -429,7 +309,6 @@ body {
     margin-top: 30px;
     margin-bottom: 30px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    max-width: 80%;
     padding: 0;
 }
 
@@ -457,7 +336,7 @@ body {
     padding: 20px 50px;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 25px;
     text-align: center;
     text-decoration: none;
 }
@@ -482,7 +361,7 @@ body {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     padding: 50px 20px 20px 20px;
     width: 100%;
-    min-height: 250px;
+    max-height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -544,7 +423,7 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-#modalBody{
+#modalBody {
     text-align: center;
 }
 
@@ -609,26 +488,6 @@ body {
     #sellerCarousel .image-wrapper img {
         height: 100%;
         object-fit: cover;
-    }
-}
-
-@media (max-width: 768px) {
-    #sellerCarousel .carousel-item > .content-wrapper {
-        flex-direction: column-reverse;
-        padding: 1.5rem;
-        width: 100%;
-    }
-
-    #sellerCarousel .image-wrapper {
-        padding-left: 0;
-    }
-
-    #sellerCarousel .image-wrapper img {
-        width: 100% !important;
-        height: auto !important;
-        max-height: 60vh;
-        object-fit: contain !important;
-        margin-bottom: 5%;
     }
 }
 
@@ -712,6 +571,7 @@ body {
 }
 
 /*footer*/
+
 .footer {
     display: flex;
     justify-content: right;
@@ -723,22 +583,18 @@ body {
 
 }
 
-.footer-right, .footer-center {
-    max-width: 100%;
-    text-align: right;
-    font-weight: 600;
-    line-height: 1.3;
-}
 
 .footer-logo {
     display: block;
     margin-bottom: auto;
-    max-width: 30%;
+    max-width: 100px;
     height: auto;
 }
 
 .footer-text {
     margin: 1% 0;
+    line-height: 1.6;
+    font-weight: 600;
 }
 
 .footer-center {
@@ -748,12 +604,211 @@ body {
 
 }
 
+/*
+    mobile style
+*/
+
 @media (max-width: 768px) {
-    .btn-pic{
-        width: 60px!important;
-        height: 18px!important;
-        font-size: 8px;
-        padding: 5px !important;
+    .custom-navbar {
+        max-width: 100%;
+        width: 100%;
+        height: 7%;
+        margin: 0;
+        border-radius: 0;
+        padding: 10px 16px;
+        justify-content: space-between;
+        z-index: 1320;
+    }
+
+    .navbar-brand {
+        position: absolute;
+        top: 30%;
+        left: 0;
+        transform: translateY(-70%);
+        margin: 20px;
+        order: 1;
+    }
+
+    .navbar-brand img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .navbar-toggler {
+        order: 1;
+        position: absolute;
+        right: 16px;
+    }
+
+    .navbar-toggler-icon {
+        height: 20px;
+        width: 20px;
+
+    }
+
+    .navbar-collapse {
+        order: 3;
+        width: 100%;
         text-align: center;
+        background-color: rgba(255, 255, 255, 0.95);
+        margin-top: 10px;
+        border-radius: 8px;
+    }
+
+    .navbar-nav .nav-link {
+        display: block;
+        padding: 10px 0;
+        font-size: 14px;
+    }
+
+    .join-btn {
+        width: 150px;
+    }
+
+    .banner-bg {
+        margin-top: 40px;
+        background-size: auto 220px !important;
+        min-height: 150px !important;
+    }
+
+    #first-row {
+        padding-top: 35px;
+        padding-bottom: 40px;
+        font-size: 18px;
+        line-height: 1.2 !important;
+    }
+
+
+    .log-in-btn {
+        font-size: 14px !important;
+        padding: 7px 17px !important;
+        font-weight: 600;
+        background-color: #66BFFF;
+        color: white;
+        border: none;
+        border-radius: 12px;
+        text-align: center;
+        display: inline-block;
+        cursor: pointer;
+        text-decoration: none;
+        margin-top: 20px !important;
+
+    }
+
+    #second-p {
+        display: none;
+    }
+
+    .values-list {
+        grid-template-columns: 1fr;
+        align-items: stretch;
+    }
+
+    .value-item {
+        padding: 30px 20px;
+        min-height: 200px;
+    }
+
+    .section-title {
+        font-size: 18px !important;
+    }
+
+    .carousel {
+        width: 96%;
+        margin-right: 2%;
+    }
+
+    .statistic-icon {
+        width: 140px;
+        height: 140px;
+    }
+
+    .statistic-icon .value {
+        font-size: 20px;
+    }
+
+    .statistic-icon img {
+        width: 40%;
+        height: 40%;
+        object-fit: contain;
+        margin-bottom: 10px;
+    }
+
+
+    .statistic .label {
+        font-size: 16px;
+    }
+
+    .statistic-container {
+        gap: 1.5rem;
+    }
+
+    .btn-pic {
+        width: 100px !important;
+        height: 18px !important;
+        padding: 0 !important;
+        font-size: 14px;
+        text-align: center;
+        background: none;
+        color: white;
+    }
+
+    .section-2 p {
+        font-size: 1rem !important;
+    }
+
+    .card {
+        width: 80%;
+        margin-right: 10%;
+        font-size: 14px;
+        height: 200px;
+        padding-top: 9%;
+    }
+
+    #sellerCarousel .carousel-item > .content-wrapper {
+        flex-direction: column-reverse;
+        padding: 1.5rem;
+        width: 100%;
+    }
+
+    #sellerCarousel .image-wrapper {
+        padding-left: 0;
+    }
+
+    #sellerCarousel .image-wrapper img {
+        width: 100% !important;
+        height: auto !important;
+        max-height: 60vh;
+        object-fit: contain !important;
+        margin-bottom: 5%;
+    }
+
+    #sellerCarousel h4 {
+        font-size: 1rem;
+    }
+
+    #sellerCarousel p {
+        font-size: 14px;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+
+    .accordion-button {
+        font-size: 14px;
+    }
+
+    .accordion-body p {
+        font-size: 12px;
+    }
+
+    .footer-logo {
+        width: 25%;
+        height: auto;
+    }
+
+    .footer-text {
+        font-size: 14px;
     }
 }

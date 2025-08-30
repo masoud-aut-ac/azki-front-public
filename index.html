@@ -30,9 +30,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#faqAccordion">سوالات متداول </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./network/network.html">شبکه سازی </a>
-                        </li>
+<!--                        <li class="nav-item">-->
+<!--                            <a class="nav-link" href="./network/network.html">شبکه سازی </a>-->
+<!--                        </li>-->
                     </ul>
                 </div>
             </div>
@@ -57,7 +57,7 @@
             <li class="nav-item"><a class="nav-link" href="#fees">کارمزدها</a></li>
             <li class="nav-item"><a class="nav-link" href="#sellerCarousel">نظرات فروشندگان</a></li>
             <li class="nav-item"><a class="nav-link" href="#faqAccordion">سوالات متداول</a></li>
-            <li class="nav-item"><a class="nav-link" href="./network/network.html">شبکه سازی</a></li>
+<!--            <li class="nav-item"><a class="nav-link" href="./network/network.html">شبکه سازی</a></li>-->
             <li class="nav-item mt-3">
                 <a href="public-registration/register.html" class="join-btn d-block text-center">ورود / ثبت نام</a>
             </li>
@@ -74,7 +74,7 @@
                     کسب درآمد نامحدود با پلتفرم جامع
                     <span class="text-accent-600">فروش بیمه</span>
                 </p>
-                <p class="mb-2">
+                <p class="mb-2" id="second-p">
                     با ثبت‌نام در
                     <span class="text-accent-600">ازکی سنتر،</span>
                     در دنیای بی‌حد و مرز فروش بیمه فعالیت کن.
@@ -179,16 +179,17 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-1"></div>
-        <div id="autoCarousel" class="carousel slide col-10" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="col-sm-0 col-md-1"></div>
+        <div id="autoCarousel" class="carousel slide col-xs-12 col-md-10" data-bs-ride="carousel"
+             data-bs-interval="3000">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="common/images/banner-network.webp" class="d-block w-100" alt="عکس اول">
-                    <a class="btn-pic" href="./network/network.html">کلیک کنید</a>
+<!--                    <a class="btn-pic" href="./network/network.html">کلیک کنید</a>-->
                 </div>
             </div>
         </div>
-        <div class="col-1"></div>
+        <div class="col-sm-0 col-md-1"></div>
     </div>
 </div>
 <div class="section-2" id="fees">
@@ -205,7 +206,7 @@
             </div>
         </div>
         <div class="col-12 col-sm-6 col-lg-4">
-            <div class="card h-100 text-start">
+            <div class="card text-start">
                 <div class="card-body">
                     <h5 class="card-title">بیمه شخص ثالث</h5>
                     <p class="card-text">دی
@@ -507,20 +508,23 @@
 
 <footer class="footer bg-light py-4">
     <div class="container">
-        <div class="row text-end">
+        <div class="row text-start">
             <div class="col-md-6 footer-right">
-                <img src="common/images/azki-logo.webp" alt="لوگو" class="footer-logo mb-3"
-                     style="max-width: 150px;"/>
-                <p class="footer-text mb-1">ازکی‌سنتر؛ پلتفرم جامع فروش بیمه‌،</p>
-                <p class="footer-text mb-1">با هدف ساده‌سازی فرآیند فروش برای فروشنده‌های بیمه</p>
-                <p class="footer-text">طراحی شده است. با ازکی‌سنتر می‌تونید، انواع بیمه‌نامه از تمام شرکت‌ها رو
-                    مقایسه
-                    کنید و بفروشید.</p>
+                <img src="common/images/azki-logo.webp" alt="لوگو" class="footer-logo mb-3">
+                <p class="footer-text mb-1">
+                    ازکی‌سنتر؛ پلتفرم جامع فروش بیمه‌،
+                    <br>
+                    با هدف ساده‌سازی فرآیند فروش برای
+                    فروشنده‌های بیمه طراحی شده است.
+                    <br>
+                    با ازکی‌سنتر می‌تونید، انواع بیمه‌نامه از تمام شرکت‌ها رو مقایسه کنید
+                    و بفروشید.
+                </p>
             </div>
             <div class="col-md-6 footer-center d-flex flex-column justify-content-center">
-                <p class="mb-1">خیابان ولیعصر، ابتدای چهارراه پارک وی، کوچه آپادانا (لطفی)، پلاک ۳</p>
-                <p class="mb-0">ایمیل: seller@azki.com</p>
-                <p class="mb-0">شماره تماس: 28422581-021</p>
+                <p class="footer-text">خیابان ولیعصر، ابتدای چهارراه پارک وی، کوچه آپادانا (لطفی)، پلاک ۳
+                <br>ایمیل: seller@azki.com
+                <br>شماره تماس: 28422581-021</p>
             </div>
         </div>
     </div>
