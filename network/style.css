@@ -37,7 +37,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: all 0.3s ease;
     height: 45px;
     font-size: 14px;
 }
@@ -113,56 +112,6 @@ body {
     color: #ffffff;
 }
 
-
-@media (max-width: 1024px) {
-    .custom-navbar {
-        max-width: 100%;
-        width: 100%;
-        height: 7%;
-        margin: 0;
-        border-radius: 0;
-        padding: 10px 16px;
-        justify-content: space-between;
-        z-index: 1320;
-    }
-
-    .navbar-brand {
-        position: absolute;
-        top: 30%;
-        left: 0;
-        transform: translateY(-70%);
-        margin: 20px;
-        order: 1;
-    }
-
-    .navbar-brand img {
-        height: 40px !important;
-        width: 40px !important;
-    }
-
-    .navbar-toggler {
-        order: 1;
-        position: absolute;
-        right: 16px;
-
-    }
-
-    .navbar-collapse {
-        order: 3;
-        width: 100%;
-        text-align: center;
-        background-color: rgba(255, 255, 255, 0.95);
-        margin-top: 10px;
-        border-radius: 8px;
-    }
-
-    .navbar-nav .nav-link {
-        display: block;
-        padding: 10px 0;
-    }
-}
-
-
 /*banner*/
 
 .banner-bg {
@@ -213,7 +162,7 @@ body {
     background-color: #ffe066;
     color: #000000;
     border: none;
-    border-radius: 12px;
+    border-radius: 20px;
     text-align: center;
     display: inline-block;
     cursor: pointer;
@@ -224,7 +173,7 @@ body {
     background-color: #dcc05d;
 }
 
-
+/*table*/
 .custom-table {
     margin-top: 12%;
     width: 100%;
@@ -236,7 +185,6 @@ body {
 }
 
 .custom-table thead {
-    background-color: #66BFFF;
     color: white;
     font-weight: bold;
     text-align: center;
@@ -327,33 +275,6 @@ body {
     margin-bottom: 15px;
 }
 
-
-@media (max-width: 768px) {
-    .statistic-icon {
-        width: 140px;
-        height: 140px;
-    }
-
-    .statistic-icon .value {
-        font-size: 20px;
-    }
-
-    .statistic-icon img {
-        width: 40%;
-        height: 40%;
-        object-fit: contain;
-        margin-bottom: 10px;
-    }
-
-
-    .statistic .label {
-        font-size: 16px;
-    }
-
-    .statistic-container {
-        gap: 1.5rem;
-    }
-}
 
 /*form*/
 #block3 {
@@ -517,11 +438,9 @@ body {
 /*footer*/
 .footer {
     display: flex;
-    justify-content: right;
-    direction: rtl;
     padding: 0 0 0 20%;
     background: linear-gradient(to bottom right, #fafafa 40%, #d2eafa 60%);
-    gap: 90%;
+    justify-content: space-between;
     max-width: 100%;
 
 }
@@ -536,7 +455,7 @@ body {
 .footer-logo {
     display: block;
     margin-bottom: auto;
-    max-width: 30%;
+    max-width: 100px;
     height: auto;
 }
 
@@ -551,19 +470,75 @@ body {
 
 }
 
+/*mobile style*/
 
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
+    .custom-navbar {
+        max-width: 100%;
+        width: 100%;
+        height: 7%;
+        margin: 0;
+        border-radius: 0;
+        padding: 10px 16px;
+        justify-content: space-between;
+        z-index: 1320;
+    }
+
+    .navbar-brand {
+        position: absolute;
+        top: 30%;
+        left: 0;
+        transform: translateY(-70%);
+        margin: 20px;
+        order: 1;
+    }
+
+    .navbar-brand img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .navbar-toggler {
+        order: 1;
+        position: absolute;
+        right: 16px;
+    }
+
+    .navbar-toggler-icon {
+        height: 20px;
+        width: 20px;
+
+    }
+
+    .navbar-collapse {
+        order: 3;
+        width: 100%;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.95);
+        margin-top: 10px;
+        border-radius: 8px;
+    }
+
+    .navbar-nav .nav-link {
+        display: block;
+        padding: 10px 0;
+        font-size: 14px;
+    }
+
+    .join-btn {
+        width: 150px;
+    }
 
     .banner-bg {
         background: url('../common/images/azki_network_files/main-Background-Mobile.webp') no-repeat;
         height: 500px;
         width: 300px;
-        border-radius: 10px !important;
+        border-radius: 10px;
     }
 
     #first-row {
-        font-size: 20px !important;
-        line-height: 1.4 !important;
+        font-size: 20px ;
+        line-height: 1.4 ;
         padding: 20px 5px;
         align-items: center;
         justify-content: center;
@@ -573,6 +548,42 @@ body {
     .first-txt {
         margin-top: 8%;
     }
+
+    .statistic-icon {
+        width: 140px;
+        height: 140px;
+    }
+
+    .statistic-icon .value {
+        font-size: 20px;
+    }
+
+    .statistic-icon img {
+        width: 40%;
+        height: 40%;
+        object-fit: contain;
+        margin-bottom: 10px;
+    }
+
+
+    .statistic .label {
+        font-size: 16px;
+    }
+
+    .statistic-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .statistic {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
 
     .network-btn {
         padding: 10px 20px;
@@ -609,7 +620,7 @@ body {
     }
 
     #block3 {
-        margin: 20px 0 !important;
+        margin: 20px 0 ;
         padding: 20px;
         text-align: center;
     }
@@ -622,7 +633,6 @@ body {
 
     .comp-form {
         width: 90%;
-        margin: 0 auto;
         padding: 10px;
     }
 
@@ -648,8 +658,8 @@ body {
 
     .logo {
         max-width: 80px;
-        align-items: center !important;
-        justify-content: center !important;
+        align-items: center;
+        justify-content: center ;
     }
 
 
@@ -658,7 +668,7 @@ body {
         height: 500px;
         background-size: cover;
         width: 300px;
-        border-radius: 10px !important;
+        border-radius: 10px ;
         padding: 20px 10px;
         text-align: center;
     }
@@ -688,6 +698,15 @@ body {
         font-size: 0.95rem;
         line-height: 1.9;
         text-align: justify;
+    }
+
+    .footer-logo {
+        width: 25%;
+        height: auto;
+    }
+
+    .footer-text {
+        font-size: 14px;
     }
 
 }
