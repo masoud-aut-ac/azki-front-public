@@ -61,12 +61,16 @@ function renderModal(title, items) {
     }
     modalBody.innerHTML = content.join("\n");
 
-    document.getElementById("detailsModal").style.display = "block";
+    document.getElementById("detailsModal").style.display = "flex";
 
     document.querySelector(".close-btn").onclick = () => {
         document.getElementById("detailsModal").style.display = "none";
     };
-
+    document.getElementById("detailsModal").onclick = function(e) {
+        if (e.target === this) {
+            this.style.display = "none";
+        }
+    };
 
 }
 
