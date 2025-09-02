@@ -1,0 +1,213 @@
+@font-face {
+    font-family: 'IranSans';
+    src: url('../common/fonts/iran-sans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    direction: rtl;
+    background-color: #f9fafc;
+    min-height: 200vh;
+    font-family: 'IranSans', serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+/*navbar*/
+
+#mainNavbar {
+    transition: margin-top 0.3s linear;
+}
+
+.custom-navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 10px rgba(50, 47, 47, 0.09);
+    border-radius: 16px;
+    padding: 25px 1%;
+    margin: 25px auto;
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    height: 45px;
+    font-size: 14px;
+}
+
+.sticky-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1320;
+    width: 100% !important;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.09);
+    padding-left: 11%;
+    padding-right: 11%;
+    font-size: 14px;
+    height: 60px;
+
+}
+
+.navbar-nav.flex-row .nav-item {
+    margin: 0 5px;
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    color: #333;
+    transition: all 0.3s ease;
+    padding: 8px 12px;
+    font-weight: 700;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #32aafb;
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #52b8ff;
+    bottom: 0;
+    right: 0;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+
+.join-btn {
+    background-color: #2ca3fa;
+    color: white;
+    border-radius: 7px;
+    padding: 6px 20px;
+    border: none;
+    text-decoration: none;
+    white-space: nowrap;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    margin-left: 5px;
+}
+
+.join-btn:hover {
+    background-color: #3eacfa;
+    color: #ffffff;
+}
+/*footer*/
+
+.footer {
+    display: flex;
+    justify-content: right;
+    direction: rtl;
+    padding: 0 0 0 20%;
+    background: linear-gradient(to bottom right, #fafafa 40%, #d2eafa 60%);
+    gap: 90%;
+    max-width: 100%;
+
+}
+
+
+.footer-logo {
+    display: block;
+    margin-bottom: auto;
+    max-width: 100px;
+    height: auto;
+}
+
+.footer-text {
+    margin: 1% 0;
+    line-height: 1.6;
+    font-weight: 600;
+}
+
+.footer-center {
+    text-align: right;
+    direction: rtl;
+    margin-top: auto;
+}
+
+@media (max-width: 1080px) {
+    .custom-navbar {
+        max-width: 100%;
+        width: 100%;
+        height: 6%;
+        margin: 0;
+        border-radius: 0;
+        padding: 10px 16px;
+        justify-content: space-between;
+        z-index: 1320;
+    }
+
+    .navbar-brand {
+        position: absolute;
+        top: 30%;
+        left: 0;
+        transform: translateY(-70%);
+        margin: 20px;
+        order: 1;
+    }
+
+    .navbar-brand img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .navbar-toggler {
+        order: 1;
+        position: absolute;
+        right: 16px;
+    }
+
+    .navbar-toggler-icon {
+        height: 20px;
+        width: 20px;
+
+    }
+
+    .navbar-collapse {
+        order: 3;
+        width: 100%;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.95);
+        margin-top: 10px;
+        border-radius: 8px;
+    }
+
+    .navbar-nav .nav-link {
+        display: block;
+        padding: 10px 0;
+        font-size: 14px;
+    }
+
+    .join-btn {
+        width: 150px;
+    }
+
+    .footer-logo {
+        width: 25%;
+        height: auto;
+    }
+
+    .footer-text {
+        font-size: 14px;
+    }
+}
