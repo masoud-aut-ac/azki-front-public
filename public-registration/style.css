@@ -85,16 +85,17 @@
 
 .errorDiv {
     margin-top: 15px;
-    padding: 5px;
+    padding: 8px;
     border-radius: 5px;
-    background-color: #b32f21;
-    color: #ffffff;
     font-size: 14px;
     text-align: center;
     display: none;
-    max-width: 40%;
+    max-width: 50%;
     margin-left: auto;
     margin-right: auto;
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
 }
 
 

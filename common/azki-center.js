@@ -17,6 +17,8 @@ export class Registration {
     frontImage;
     backImage;
     status;
+    role;
+    job
 }
 
 
@@ -51,12 +53,16 @@ export function getRole() {
 function setRole(role) {
     localStorage.setItem("role", role);
 }
+
 export function logOut() {
     localStorage.removeItem("token");
     localStorage.removeItem("role");
 }
+
 export const ROLE_ADMIN = "admin";
 export const ROLE_SPECIALIST = "specialist";
+export const REGISTRATION_AGENT = "agent";
+export const REGISTRATION_NETWORK = "networkMarketer";
 const baseUrl = "http://localhost:8080";
 
 export const statusMap = {
@@ -73,6 +79,8 @@ export async function register(registration) {
     body.set("fullName", registration.fullName);
     body.set("nationalCode", registration.nationalCode);
     body.set("phone", registration.phone);
+    body.set("role", registration.role);
+    body.set("job", registration.job);
     if (registration.refererCode) {
         body.set("refererCode", registration.refererCode);
     }

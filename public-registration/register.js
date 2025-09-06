@@ -1,4 +1,4 @@
-import {register, Registration} from "../common/azki-center.js";
+import {register, Registration, REGISTRATION_AGENT} from "../common/azki-center.js";
 
 async function registerBtn() {
     const r = new Registration();
@@ -7,6 +7,7 @@ async function registerBtn() {
     r.nationalCode = document.getElementById('nationalCode').value.trim();
     r.refererCode = document.getElementById('refererCode').value.trim();
     r.frontImage = document.getElementById('frontImage').value.trim();
+    r.role = REGISTRATION_AGENT;
 
 
     if (!r.fullName || !r.phone || !r.nationalCode) {
@@ -14,7 +15,7 @@ async function registerBtn() {
         return;
     }
 
-    let convertResult = convertFarsiToEnglishNums(r.phone);
+    let convertResult =  (r.phone);
     if (r.phone.length !== 11  || convertResult.hasError || !convertResult.converted.startsWith("09")) {
         showResult("شماره همراه اشتباه است!");
         return;

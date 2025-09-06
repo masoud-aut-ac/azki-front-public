@@ -1,0 +1,519 @@
+/*banner*/
+
+.banner-bg {
+    background: url('../common/images/azki_network_files/Main-Background.webp') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 6%;
+}
+
+
+#first-row {
+    padding-top: 2%;
+    padding-bottom: 10%;
+    align-items: center;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bolder;
+    line-height: 2;
+    color: white;
+    padding-right: 4%;
+}
+
+.first-txt {
+    color: #ffe066;
+}
+
+#first-row button {
+    background-color: transparent;
+    border-color: #66BFFF;
+    color: #66BFFF;
+    font-size: 24px;
+    margin-top: 40px;
+}
+
+#first-row button:hover {
+    background-color: #66BFFF;
+    color: white;
+}
+
+
+.network-btn {
+    padding: 15px 60px;
+    font-size: 18px;
+    font-weight: 900;
+    background-color: #ffe066;
+    color: #000000;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.network-btn:hover {
+    background-color: #dcc05d;
+}
+
+/*table*/
+.custom-table {
+    margin-top: 12%;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-table thead {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.custom-table th {
+    padding: 18px 12px;
+    text-align: center;
+    font-size: 16px;
+    color: #f4f9fb;
+    border: 7px solid #f7f8fa;
+    background-color: #019af0;
+    border-radius: 25px;
+}
+
+.custom-table td {
+    padding: 18px 12px;
+    text-align: center;
+    font-size: 16px;
+    color: #050505;
+    border: 7px solid #f7f8fa;
+    background-color: #cbeefd;
+}
+
+.custom-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.custom-table tbody tr:hover {
+    background-color: #e0f7ff;
+    cursor: pointer;
+}
+
+.main-txt {
+    margin-top: 8%;
+    line-height: 2.2rem;
+    font-size: 18px !important;
+    padding-left: 5%;
+}
+
+
+/*statics*/
+
+.statistic-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5%;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    padding: 5% 5%;
+}
+
+.statistic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.statistic-icon {
+    width: 200px;
+    height: 200px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    border: 25px outset #00b3fd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.statistic-icon .value {
+    font-size: 26px;
+    color: #6B7280;
+    font-weight: bold;
+}
+
+.statistic .label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    background-color: #008dfb;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+
+/*form*/
+#block3 {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 20px;
+    direction: rtl;
+    text-align: right;
+}
+
+
+.form-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-header h2 {
+    font-size: 26px;
+    color: #101010;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+
+.comp-image {
+    flex: 1;
+    max-width: 40%;
+}
+
+.comp-image img {
+    width: 100%;
+}
+
+
+.comp-form {
+    max-width: 450px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: right; /* چون متن فارسیه */
+    margin: 10% auto 0;
+}
+
+.comp-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+.comp-form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+
+.btn-submit {
+    background: linear-gradient(135deg, #66BFFF, #3399FF);
+    border: none;
+    padding: 12px 20px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    font-weight: bold;
+}
+
+.btn-submit:hover {
+    background: linear-gradient(135deg, #3399FF, #007bff);
+    transform: translateY(-2px);
+}
+
+/*second banner*/
+
+.second-bnr {
+    background: url('../common/images/azki_network_files/3rd-Section-Background.webp') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 2%;
+}
+
+.first-row-txt {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: right;
+    font-size: 35px;
+    font-weight: bolder;
+    line-height: 2;
+    color: white;
+    padding-right: 4%;
+}
+
+.second-row-txt {
+    padding-top: 2%;
+    padding-bottom: 1%;
+    text-align: right;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2;
+    color: white;
+    padding-right: 4%;
+}
+
+.center-box {
+    width: 60%;
+    margin: 0 auto;
+    text-align: right;
+}
+
+/*third part*/
+.third-row-header {
+    margin-top: 7%;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.third-row-txt {
+    padding-top: 5%;
+    text-align: right;
+    font-size: 1.2rem;
+}
+
+.custom-wrapper {
+    max-width: 100%;
+    margin-top: 2.5%;
+    margin-right: -10%;
+    margin-bottom: 2%;
+}
+
+.text-icon h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+}
+
+.text-icon p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.text-logo {
+    max-width: 100px;
+}
+
+#result {
+    margin-top: 12px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    min-height: 24px;
+    color: transparent;
+    background-color: transparent;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+
+#result.show-error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+
+
+/*mobile style*/
+
+@media (max-width: 1080px) {
+
+    .banner-bg {
+        background: url('../common/images/azki_network_files/main-Background-Mobile.webp') no-repeat;
+        height: 500px;
+        width: 300px;
+        border-radius: 10px;
+    }
+
+    #first-row {
+        font-size: 20px ;
+        line-height: 1.4 ;
+        padding: 20px 5px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 17%;
+    }
+
+    .first-txt {
+        margin-top: 8%;
+    }
+
+    .statistic-icon {
+        width: 140px;
+        height: 140px;
+    }
+
+    .statistic-icon .value {
+        font-size: 20px;
+    }
+
+    .statistic-icon img {
+        width: 40%;
+        height: 40%;
+        object-fit: contain;
+        margin-bottom: 10px;
+    }
+
+
+    .statistic .label {
+        font-size: 16px;
+    }
+
+    .statistic-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .statistic {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+
+    .network-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5%;
+
+    }
+
+    .custom-table {
+        font-size: 12px;
+        margin-top: 20px;
+        overflow-x: auto;
+        display: block;
+    }
+
+    .custom-table th, .custom-table td {
+        padding: 8px 6px;
+    }
+
+    .main-txt {
+        width: 80%;
+        margin: 30px auto;
+        text-align: center;
+        font-size: 16px;
+    }
+
+
+    .content {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #block3 {
+        margin: 20px 0 ;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .form-header {
+        width: 95%;
+        margin: 30px 10px;
+        text-align: center;
+    }
+
+    .comp-form {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .comp-image {
+        display: none;
+    }
+
+    .custom-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+    }
+
+    .text-icon h2 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .text-icon p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .text-logo {
+        max-width: 80px;
+        align-items: center;
+        justify-content: center ;
+    }
+
+
+    .second-bnr {
+        background: url('../common/images/azki_network_files/3rd-section-mobile2-copy.webp') no-repeat;
+        height: 500px;
+        background-size: cover;
+        width: 300px;
+        border-radius: 10px ;
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    .first-row-txt, .second-row-txt {
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: right;
+
+    }
+
+    .center-box {
+        margin-top: 8%;
+        padding: 1rem;
+        text-align: center;
+        min-width: 93%;
+    }
+
+    .third-row-header {
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin-bottom: 0.8rem;
+        line-height: 1.6;
+    }
+
+    .third-row-txt {
+        font-size: 0.95rem;
+        line-height: 1.9;
+        text-align: justify;
+    }
+}
