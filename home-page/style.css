@@ -48,10 +48,13 @@
     display: inline-block;
     cursor: pointer;
     text-decoration: none;
+    margin-top: 30px;
+    transition: ease-in 0.2s;
 }
 
 .log-in-btn:hover {
-    background-color: #5dbdff;
+    background-color: #3aa1fc;
+    color: white;
 }
 
 
@@ -97,6 +100,7 @@
     background: radial-gradient(circle at center, #c0e6ff 30%, #66bbff 70%);
     color: #6B7280;
     box-shadow: 0 6px 15px rgba(94, 144, 211, 0.7);
+    transition: background 0.5s ease, box-shadow 0.5s ease;
 }
 
 .value-item h1 {
@@ -223,6 +227,7 @@
     border-radius: 25px;
     text-align: center;
     text-decoration: none;
+    transition: ease-in 0.2s;
 }
 
 .btn-pic:hover {
@@ -492,21 +497,21 @@
 @media (max-width: 768px) {
     .banner-bg {
         margin-top: 40px;
-        background-size: auto 220px !important;
-        min-height: 150px !important;
+        background-size: auto 220px ;
+        min-height: 150px;
     }
 
     #first-row {
         padding-top: 35px;
         padding-bottom: 40px;
-        font-size: 18px;
-        line-height: 1.2 !important;
+        font-size: 17px;
+        line-height: 1.2;
     }
 
 
     .log-in-btn {
-        font-size: 14px !important;
-        padding: 7px 17px !important;
+        font-size: 12px ;
+        padding: 5px 10px ;
         font-weight: 600;
         background-color: #66BFFF;
         color: white;
@@ -516,7 +521,7 @@
         display: inline-block;
         cursor: pointer;
         text-decoration: none;
-        margin-top: 20px !important;
+        margin-top: 20px ;
 
     }
 
@@ -535,7 +540,7 @@
     }
 
     .section-title {
-        font-size: 18px !important;
+        font-size: 18px;
     }
 
     .carousel {
@@ -569,9 +574,9 @@
     }
 
     .btn-pic {
-        width: 100px !important;
-        height: 18px !important;
-        padding: 0 !important;
+        width: 100px ;
+        height: 18px ;
+        padding: 0 ;
         font-size: 14px;
         text-align: center;
         background: none;
@@ -579,7 +584,7 @@
     }
 
     .section-2 p {
-        font-size: 1rem !important;
+        font-size: 1rem ;
     }
 
     .card {
@@ -601,10 +606,10 @@
     }
 
     #sellerCarousel .image-wrapper img {
-        width: 100% !important;
-        height: auto !important;
+        width: 100% ;
+        height: auto ;
         max-height: 60vh;
-        object-fit: contain !important;
+        object-fit: contain ;
         margin-bottom: 5%;
     }
 

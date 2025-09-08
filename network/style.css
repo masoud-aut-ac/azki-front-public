@@ -53,10 +53,12 @@
     display: inline-block;
     cursor: pointer;
     text-decoration: none;
+    transition: ease-in 0.2s;
 }
 
 .network-btn:hover {
     background-color: #dcc05d;
+    color: black;
 }
 
 /*table*/
@@ -208,7 +210,7 @@
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: right; /* چون متن فارسیه */
+    text-align: right;
     margin: 10% auto 0;
 }
 
@@ -226,7 +228,6 @@
     border-radius: 6px;
     margin-bottom: 15px;
 }
-
 
 .btn-submit {
     background: linear-gradient(135deg, #66BFFF, #3399FF);

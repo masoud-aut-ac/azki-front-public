@@ -6,7 +6,7 @@ async function registerBtn() {
     r.fullName = document.getElementById('name').value.trim();
     r.nationalCode = document.getElementById('nationalCode').value.trim();
     r.refererCode = document.getElementById('refererCode').value.trim();
-    r.frontImage = document.getElementById('frontImage').value.trim();
+    r.frontImage = document.getElementById('frontImage').files[0]   ;
     r.role = REGISTRATION_AGENT;
 
 
@@ -15,7 +15,7 @@ async function registerBtn() {
         return;
     }
 
-    let convertResult =  (r.phone);
+    let convertResult = convertFarsiToEnglishNums(r.phone);
     if (r.phone.length !== 11  || convertResult.hasError || !convertResult.converted.startsWith("09")) {
         showResult("شماره همراه اشتباه است!");
         return;
