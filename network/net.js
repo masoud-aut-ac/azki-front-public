@@ -40,7 +40,6 @@ async function submit() {
     r.role = REGISTRATION_NETWORK;
 
 
-
     if (!r.phone || !r.fullName || !r.job) {
         showError("لطفا همه مقادیر را پر کنید");
         return;
@@ -50,7 +49,7 @@ async function submit() {
         showError("شماره موبایل معتبر نیست!");
         return;
     }
-
+    showLoader();
     const registerResponse = await register(r);
 
     if (registerResponse.success) {
@@ -62,6 +61,7 @@ async function submit() {
     } else {
         showError("خطا در برقراری ارتباط، لطفا بعدا تلاش کنید");
     }
+    hideLoader();
 }
 
 
@@ -69,6 +69,23 @@ function showError(message) {
     const resultDiv = document.getElementById("result");
     resultDiv.innerText = message;
     resultDiv.classList.add("show-error");
-    }
+}
+
+function showLoader() {
+    let loader = document.getElementById("loader");
+    loader.hidden = false;
+
+    let button = document.getElementById("submitBtn");
+    button.hidden = true;
+}
+
+function hideLoader() {
+    let loader = document.getElementById("loader");
+    loader.hidden = true;
+
+    let button = document.getElementById("submitBtn");
+    button.hidden = false;
+}
+
 
 window.submit = submit;

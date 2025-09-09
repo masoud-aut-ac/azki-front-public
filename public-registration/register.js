@@ -30,6 +30,7 @@ async function registerBtn() {
     }
     r.nationalCode = convertIdResult.converted;
 
+    showLoader();
     const registerResponse = await register(r);
 
     if (registerResponse.success) {
@@ -41,6 +42,7 @@ async function registerBtn() {
     } else {
         showResult("خطا در برقراری ارتباط ، لطفا بعدا تلاش کنید ")
     }
+    hideLoader();
 }
 
 let numbersMap = {"۰": 0, "۱": 1, "۲": 2, "۳": 3, "۴": 4, "۵": 5, "۶": 6, "۷": 7, "۸": 8, "۹": 9,};
@@ -81,6 +83,21 @@ export function showResult(message) {
 function backToHome() {
     window.location.href = "../index.html";
 }
+
+function showLoader(){
+    let loader = document.getElementById("loader");
+    loader.hidden = false;
+
+    let button = document.getElementById("submitBtn");
+    button.disabled = true;
+}
+ function hideLoader(){
+     let loader = document.getElementById("loader");
+     loader.hidden = true;
+
+     let button = document.getElementById("submitBtn");
+     button.disabled = false;
+ }
 
 window.registerBtn = registerBtn;
 window.backToHome = backToHome;
